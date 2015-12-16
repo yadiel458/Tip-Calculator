@@ -26,6 +26,7 @@ class ViewController: UIViewController, SettingsDelegate {
     let numberFormatter:NSNumberFormatter = NSNumberFormatter()
     
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class ViewController: UIViewController, SettingsDelegate {
         
         
         tipSlider.minimumValue = 0
-        tipSlider.maximumValue = 100
+        tipSlider.maximumValue = 30
         tipSlider.value = 20
         tipSlider.addTarget(self, action: "sliderTipChanged:", forControlEvents: .ValueChanged)
         
@@ -85,9 +86,9 @@ class ViewController: UIViewController, SettingsDelegate {
         }
         
         numberFormatter.numberStyle = NSNumberFormatterStyle.PercentStyle
-        numberFormatter.minimumFractionDigits = 1
-        numberFormatter.maximumFractionDigits = 1
-        TipPercentageLabel.text = self.numberFormatter.stringFromNumber(tipPercentage)
+        numberFormatter.minimumFractionDigits = 2
+        numberFormatter.maximumFractionDigits = 2
+        TipPercentageLabel.text = String(format: "%.0f%%", tipPercentage * 100)
         
         numberOfPersonLabel.text = "\(numberOfPerson)"
         
@@ -109,6 +110,7 @@ class ViewController: UIViewController, SettingsDelegate {
     func tipPercentageChanged(newValue: Double) {
         TipPercentageLabel.text = "\(newValue)%"
         tipPercentage = newValue
+        tipSlider.value = 100.0 * Float(newValue)
         refreshCalculation()
     }
 }

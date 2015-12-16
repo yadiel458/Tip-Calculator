@@ -127,6 +127,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="lLO-IP-O2S">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ClQ-Tm-5cq"/>
                         <barButtonItem key="rightBarButtonItem" image="COG4.png" id="Zjq-UY-6LB">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
