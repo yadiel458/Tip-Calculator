@@ -4,7 +4,7 @@
 
 Submitted by: **Yadiel H. Vélez**
 
-Time spent: **28** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
