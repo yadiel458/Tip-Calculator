@@ -21,14 +21,14 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [Yes] List anything else that you can get done to improve the app functionality!
+- [x] List anything else that you can get done to improve the app functionality!
 —* Split the tip according to the persons in your table.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/JaUcG33.gif'
+<img src='http://i.imgur.com/JaUcG33.gif' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
